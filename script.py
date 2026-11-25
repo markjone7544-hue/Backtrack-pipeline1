@@ -12,7 +12,7 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 if not HF_TOKEN:
     raise RuntimeError("Missing HF_TOKEN environment variable. Set it before starting script.py.")
 
-HF_USERNAME = os.getenv("HF_USERNAME", "Techboss22")
+HF_USERNAME = os.getenv("HF_USERNAME", "West718")
 DATA_REPO_NAME = os.getenv("DATA_REPO_NAME", "Main3")
 
 api = HfApi(token=HF_TOKEN)
@@ -55,8 +55,8 @@ PUSH_INTERVAL = 20_000_000
 FILE_SIZE_LIMIT_BYTES = 2 * 1024 * 1024  # 2MB limit
 MAX_FILES_PER_FOLDER = 40
 
-START_PUBKEY_X = "d3d774c151e8ccbedd4c0f01dac073a878045b570665814392f6122d65a5897a"
-START_PUBKEY_Y = "89b9dd38eab4568eef1ff4bca46bae85528daf7debacaca568c3258581b88bd3"
+START_PUBKEY_X = "47ef7f714feeb1b1738f5e73d576cca4a57933c43a5fb521e8629081b76a44f9"
+START_PUBKEY_Y = "3305b474de0c75bded647e524ff2f790a4e2049b1ca9b50c30b8eb4deea395cd"
 
 curr_x = gmpy2.mpz(int(START_PUBKEY_X, 16))
 curr_y = gmpy2.mpz(int(START_PUBKEY_Y, 16))
